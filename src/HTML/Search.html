@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>19ss_Web_Search</title>
+    <link href="../CSS/Searh.css" rel="stylesheet">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../JavaScript/Detection.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <!--响应式窗口，在浏览器窗口不够大时变为下拉菜单,data-target用于指示要切换到哪一个元素-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <!--三个带有 class .icon-bar 的 <span> 创建所谓的汉堡按钮-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../index.html"><i class="fa fa-first-order fa-2x"></i></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="../../index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                <li><a href="Browse.html"><span class="glyphicon glyphicon-align-justify"></span> 浏览</a></li>
+                <li class="active"><a href="Search.html"><span class="glyphicon glyphicon-search"></span> 搜索</a></li>
+            </ul>
+            <ul class="nav navbar-nav nav-pills navbar-right">
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-user"></span> 个人中心 <span class="caret"></span></a>
+                    <!--下拉菜单的内容-->
+                    <ul class="dropdown-menu">
+                        <li><a href="Upload.html"><span class="glyphicon glyphicon-open"></span> 上传</a></li>
+                        <li><a href="Photograph.html"><span class="glyphicon glyphicon-th"></span> 我的照片<span class="sr-only">(current)</span></a></li>
+                        <li><a href="Favourite.html"><span class="glyphicon glyphicon-heart"></span> 我的收藏</a></li>
+                        <li><a href="../PHP/Logout.php"><span class="glyphicon glyphicon-log-in"></span> 登出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container-fluid">
+    <div class="panel panel-default">
+        <div class="panel-heading">搜索</div>
+        <div class="panel-body">
+            <form class="search">
+                <label for="search-title">
+                    <input type="radio" name="optionsRadios" id="search-title" value="title" checked> 描述查询
+                </label>
+                <input type="text" class="form-control" id="search-info" placeholder="请输入国家">
+                <label for="search-info">
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="info"> 描述查询
+                </label>
+                <textarea class="form-control" id="image-information" rows="3" placeholder="写些东西吧"></textarea>
+                <button type="submit" class="btn btn-success">查找</button>
+            </form>
+        </div>
+    </div>
+    <div class="panel panel-default display">
+        <div class="panel-heading">搜索结果</div>
+        <div class="panel-body result result-0">
+            <div class="row">
+                <div class="col-sm-4 col-xs-6">
+                    <a href="#">
+                        <div class="image"></div>
+                    </a>
+                </div>
+                <div class="col-sm-8 col-xs-6">
+                    <div class="header">
+                        <h3></h3>
+                    </div>
+                    <p><b>简介:</b></p>
+                    <div class="word">
+                        <p></p>
+                    </div>
+                    <p class="Date">上传于：<time>暂无记录</time></p>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body result result-1">
+            <div class="row">
+                <div class="col-sm-4 col-xs-6">
+                    <a href="#">
+                        <div class="image"></div>
+                    </a>
+                </div>
+                <div class="col-sm-8 col-xs-6">
+                    <div class="header">
+                        <h3></h3>
+                    </div>
+                    <p><b>简介:</b></p>
+                    <div class="word">
+                        <p></p>
+                    </div>
+                    <p class="Date">上传于：<time>暂无记录</time></p>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body result result-2">
+            <div class="row">
+                <div class="col-sm-4 col-xs-6">
+                    <a href="#">
+                        <div class="image"></div>
+                    </a>
+                </div>
+                <div class="col-sm-8 col-xs-6">
+                    <div class="header">
+                        <h3></h3>
+                    </div>
+                    <p><b>简介:</b></p>
+                    <div class="word">
+                        <p></p>
+                    </div>
+                    <p class="Date">上传于：<time>暂无记录</time></p>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body result result-3">
+            <div class="row">
+                <div class="col-sm-4 col-xs-6">
+                    <a href="#">
+                        <div class="image"></div>
+                    </a>
+                </div>
+                <div class="col-sm-8 col-xs-6">
+                    <div class="header">
+                        <h3></h3>
+                    </div>
+                    <p><b>简介:</b></p>
+                    <div class="word">
+                        <p></p>
+                    </div>
+                    <p class="Date">上传于：<time>暂无记录</time></p>
+                </div>
+            </div>
+        </div>
+        <div class="pagebutton">
+            <ul class="pagination">
+            </ul>
+        </div>
+    </div>
+</main>
+<footer>
+    <p class="copyright">Copyright 2020 Webfundamental LesuTree Alive. All Rights Reserved. 备案号：沪ICP备19302010043号</p>
+</footer>
+</body>
+<script src="../JavaScript/Display.js"></script>
+<script src="../JavaScript/Search.js"></script>
+</html>

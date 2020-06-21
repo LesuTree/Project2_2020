@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-image: linear-gradient(to right, #ff5b58,dodgerblue);
+}
+.headline {
+    width:80%;
+}
+.container-fluid {
+    width: 80%;
+    margin-left: 0%;
+}
+aside {
+    bottom: 10.4%;
+    position: fixed;
+    float:right;
+    margin-left: 85%;
+}
+aside button {
+    width: 65px;
+    display: block;
+    margin: 7%;
+    border-radius: 0.6em;
+}
+.img {
+    height: 200px;
+    width:300px;
+}
+footer {
+    margin-top: 10%;
+    vertical-align: bottom;
+    width: 80%;
+    margin-left: 0%;
+    background-image: linear-gradient(to right,lightskyblue,lightgreen);
+}
+footer p{
+    text-align: center;
+    color: white;
+}

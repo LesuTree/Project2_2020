@@ -1,0 +1,16 @@
+html{
+    background-image: linear-gradient(to right, #ff5b58,dodgerblue);
+}
+.col-sm-4 {
+    height: 500px;
+}
+.image {
+    height: 100%;
+}
+footer {
+    margin-top: 2%;
+    vertical-align: bottom;
+    width: 80%;
+    margin-left: 12%;
+    background-image: linear-gradient(to right,lightskyblue,lightgreen);
+}

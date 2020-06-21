@@ -1,0 +1,26 @@
+html{
+    background-image: linear-gradient(to right, #ff5b58,dodgerblue);
+}
+button{
+    width: 20%;
+    height: 50px;
+    font-size: 0.9vw;
+}
+footer {
+    margin-top: 2%;
+    vertical-align: bottom;
+    width: 80%;
+    margin-left: 12%;
+    background-image: linear-gradient(to right,lightskyblue,lightgreen);
+}
+footer ul{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 25%;
+}
+footer li{
+    color: white;
+}
+footer div {
+    text-align: center;
+}

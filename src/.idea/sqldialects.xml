@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/PHP/Browse_Filter.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Browse_Init.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Browse_Linkage.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Details.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Favor.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Favor_Cancel.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Favourite.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Homepage_Init.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Homepage_Refresh.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Login.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Modify.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Modify_Init.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Photograph.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Photograph_Delete.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Search.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Signup.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Upload.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Upload_Init.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PHP/Upload_Linkage.php" dialect="GenericSQL" />
+  </component>
+</project>

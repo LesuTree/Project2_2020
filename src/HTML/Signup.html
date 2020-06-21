@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>19ss_Web_Signup</title>
+    <link href="../CSS/Login.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../font-awesome/css/font-awesome.min.css">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<main class="container-fluid">
+    <i class="fa fa-first-order fa-5x"></i>
+    <!--欢迎文字-->
+    <h2>欢迎来到雪灵灵粉丝团</h2>
+    <form id="signupForm" role="form" method="POST" action="../PHP/Signup.php" >
+        <fieldset>
+            <legend>注册界面</legend>
+        </fieldset>
+        <div class="form-group">
+            <label for="User">用户名：</label><span id="userWarn">*</span>
+            <input type="text" class="form-control" name="User" id="User" placeholder="请输入用户名" minlength="4" required>
+        </div>
+        <div class="form-group">
+            <label for="Email">邮箱：</label><span id="emailWarn">*</span>
+            <input type="email" class="form-control" name="Email" id="Email" placeholder="请输入邮箱" required>
+        </div>
+        <div class="form-group">
+            <label for="pass">密码：</label><span id="passwordWarn">*</span>
+            <input type="password" class="form-control" name="pass" id="pass" placeholder="请输入密码" minlength="8" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm">确认密码：</label><span id="confirmWarn">*</span>
+            <input type="password" class="form-control" id="confirm" placeholder="请再次输入密码" minlength="8"  required>
+        </div>
+        <input type="submit" class="btn btn-success" value="注册">
+    </form>
+    <p>已经有帐号了？<a href="Login.html">点击这里进行登录</a></p>
+</main>
+<footer>
+    <p>Copyright &#169 2020 Webfundamental LesuTree Alive. All Rights Reserved. 备案号：沪ICP备19302010043号</p>
+</footer>
+</body>
+<script src="../JavaScript/Signup.js"></script>
+</html>

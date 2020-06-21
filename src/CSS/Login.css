@@ -1,0 +1,66 @@
+
+.content {
+    background-image: linear-gradient(to right,mediumvioletred,deepskyblue);
+    border:1px solid white;
+}
+.title{
+    background-image: repeating-linear-gradient(45deg, #d4237a 0, #d4237a 50px, #13227a 50px, #13227a 100px);
+    width: 47%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.container-fluid h2{
+    text-align: center;
+    background-image: repeating-linear-gradient(45deg, #d4237a 0, #d4237a 50px, #13227a 50px, #13227a 100px);
+    width: 47%;
+    margin-left: 15%;
+    margin-top: 5%;
+    color:white;
+}
+input[type="text"]{
+    font-size: 1.7vw;
+    width: 80%;
+    height: 50px;
+    border-radius: 0.4em;
+
+}
+input[name="password"]{
+    -webkit-text-security: disc !important;
+    width: 80%;
+    height: 50px;
+}
+input[type="password"]{
+    -webkit-text-security: disc !important;
+    width: 80%;
+    height: 50px;
+}
+input[type="email"]{
+    -webkit-text-security: disc !important;
+    width: 80%;
+    height: 50px;
+}
+input[type="submit"]{
+    width: 75%;
+    height: 50px;
+    border-radius: 0.4em;
+    background-image: linear-gradient(to right,lightskyblue,lightgreen);
+    color: white;
+    font-size: 1.6vw;
+}
+.container-fluid p{
+    margin-top: 5%;
+    margin-left: 30%;
+    font-size: 1.2vw;
+}
+footer {
+    margin-top: 10%;
+    vertical-align: bottom;
+    width: 80%;
+    margin-left: 0%;
+    background-image: linear-gradient(to right,lightskyblue,lightgreen);
+}
+footer p{
+    text-align: center;
+    color: white;
+}
+

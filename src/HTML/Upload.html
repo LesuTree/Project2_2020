@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>19ss_Web_Upload</title>
+    <link href="../CSS/Navigation.css" rel="stylesheet">
+    <link href="../CSS/Main.css" rel="stylesheet">
+    <link href="../CSS/Input.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../font-awesome/css/font-awesome.min.css">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <!--响应式窗口，在浏览器窗口不够大时变为下拉菜单,data-target用于指示要切换到哪一个元素-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <!--三个带有 class .icon-bar 的 <span> 创建所谓的汉堡按钮-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../index.html"><i class="fa fa-first-order fa-2x"></i></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="../../index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                <li><a href="Browse.html"><span class="glyphicon glyphicon-align-justify"></span> 浏览</a></li>
+                <li><a href="Search.html"><span class="glyphicon glyphicon-search"></span> 搜索</a></li>
+            </ul>
+            <ul class="nav navbar-nav nav-pills navbar-right">
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-user"></span> 个人中心 <span class="caret"></span></a>
+                    <!--下拉菜单的内容-->
+                    <ul class="dropdown-menu">
+                        <li><a href="Upload.html"><span class="glyphicon glyphicon-open"></span> 上传</a></li>
+                        <li><a href="Photograph.html"><span class="glyphicon glyphicon-th"></span> 我的照片<span class="sr-only">(current)</span></a></li>
+                        <li><a href="Favourite.html"><span class="glyphicon glyphicon-heart"></span> 我的收藏</a></li>
+                        <li><a href="../PHP/Logout.php"><span class="glyphicon glyphicon-log-in"></span> 登出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container-fluid">
+    <div class="panel panel-default">
+        <div class="panel-heading">Upload</div>
+        <div class="panel-body">
+            <form class="form-horizontal" role="form" method="post" action="../PHP/Upload.php" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="file" class="col-sm-2 control-label">文件上传</label>
+                    <center><img id="img" src=""></center>
+                    <center><input type="file" id="file" name="file" accept="image/*" onchange="showFile()" required></center>
+                </div>
+                <div class="form-group">
+                    <label for="image-title" class="col-sm-2 control-label">图片标题</label><span id="titleWarn">*</span>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="image-title" id="image-title" placeholder="请输入图片标题" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="image-information" class="col-sm-2 control-label">图片简介</label><span id="infoWarn"></span>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" name="image-information" id="image-information" rows="3" placeholder="写些东西吧"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Content</label>
+                    <div class="col-sm-2">
+                        <select class="form-control" id="content" name="content" required>
+                            <option value="Scenery">Scenery</option>
+                            <option value="City">City</option>
+                            <option value="Building">Building</option>
+                            <option value="Wonder">Wonder</option>
+                            <option value="People">People</option>
+                            <option value="Animal">Animal</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <label class="col-sm-1 control-label">Country</label>
+                    <div class="col-sm-2">
+                        <select class="form-control" id="country" name="country" onchange=linkage() required>
+                        </select>
+                    </div>
+                    <label class="col-sm-1 control-label">City</label><span id="cityWarn"></span>
+                    <div class="col-sm-2">
+                        <select id="city" class="form-control" name="city">
+                            <option value=''>None</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-success">提交</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<footer>
+    <p class="copyright">Copyright 2020 Webfundamental LesuTree Alive. All Rights Reserved. 备案号：沪ICP备19302010043号</p>
+</footer>
+</body>
+<script src="../JavaScript/Upload.js"></script>
+</html>
